@@ -20,6 +20,39 @@ p{
 #nav-links{
     display: none;
 }
+#sidebar{
+    background-color: hsl(36, 100%, 99%);
+    position: fixed;
+    top: 0;
+    right: 0;
+    height: 100vh;
+    width: 200px;
+    display: flex;
+    flex-direction: column;
+    display: none;
+
+}
+#sidebar img{
+  width: 30px;
+  height: 30px;
+  margin-top: 50px;
+  float: left;
+  
+}
+#sidebar li{
+    width: 100%;
+    list-style-type: none;
+    padding: 20px;
+
+}
+#sidebar a{
+    text-decoration: none;
+    padding: 20px;
+    font-size: 15px;
+    font-family: 'Inter', sans-serif;
+    color: hsl(240, 100%, 5%);
+
+}
 .container-0{
     background-image: url('/Images/image-web-3-mobile.jpg');
     background-repeat: no-repeat;
@@ -50,6 +83,11 @@ p{
     letter-spacing: 2px;
     margin: 10px 0 0 0;
 }
+.container-1 button:hover{
+    background-color: hsl(240, 100%, 5%);
+    cursor: url('Images/cursor-pointer.svg'), auto;
+    color: hsl(36, 100%, 99%);
+  }
 .container-2{
     border: 1px solid hsl(240, 100%, 5%);
     font-family: 'Inter', sans-serif;
@@ -73,6 +111,14 @@ p{
     margin: 10px 0;
     color: hsl(36, 100%, 99%);
     font-weight: 800;
+}
+.container-2-divs a{
+    color: hsl(36, 100%, 99%);
+    text-decoration: none;
+}
+.container-2-divs a:hover{
+    color: hsl(35, 77%, 62%);
+    cursor: url('Images/cursor-pointer.svg'), auto;
 }
 .container-2-divs p{
     color: hsl(233, 8%, 79%);
@@ -108,6 +154,14 @@ p{
     width: 103px;
     height: 131px;
 }
+.container-3-div a{
+    text-decoration: none;
+    color: hsl(240, 100%, 5%);
+  }
+  .container-3-div a:hover{
+        color: hsl(5, 85%, 63%);
+        cursor: url('/Images/cursor-pointer.svg'), auto;
+  }
 @media only screen and (min-width: 760px){
     body{
         margin: 30px 70px;
@@ -128,6 +182,10 @@ p{
         font-family: 'Inter', sans-serif;
         font-weight: 400;
     }
+    #nav-links a:hover{
+        color: hsl(5, 85%, 63%);
+        cursor: url('Images/cursor-pointer.svg'), auto;
+      }
     .container{
         display: grid;
         grid-template-columns: 5fr 2fr;
@@ -190,6 +248,7 @@ p{
     justify-content: space-between;
     gap: 50px;
   }
+
   .container-1 div{
     width: 50%;
   }
@@ -206,20 +265,6 @@ p{
   .container-2-divs h4{
     margin: 10px 0;
   }
-  /*
-  .container-1{
-    gap: 40px;
-  }
-  .container-1 div{
-    border: 2px solid black;
-    width: 75%;
-    padding: 20px 20px 0 0px;
-  }
-  .container-1 button{
-    width: 50%;
-    margin-top: 50px;
-    height: 40px;
-  }*/
   .container-3 img{
     width: 100px;
     height: 100%;
